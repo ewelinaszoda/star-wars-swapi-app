@@ -2,7 +2,7 @@ import React from 'react';
 import API from '../API';
 import { Table } from 'react-bootstrap';
 
-function PersonDetails(props) {
+function PersonDetails({ people, personId, routerProps }) {
   const [id, setId] = React.useState(0);
   const [name, setName] = React.useState('');
   const [birth_year, setBirth_year] = React.useState('');
@@ -12,20 +12,20 @@ function PersonDetails(props) {
   const [species, setSpecies] = React.useState([]);
 
   const getData = (data) => {
-    setId(data.id);
-    setName(data.name);
-    setBirth_year(data.birth_year);
-    setHeight(data.height);
-    setMass(data.mass);
-    setHomeworld(data.homeworld);
-    setSpecies(data.species);
+    setId = data.id;
+    setName = data.name;
+    setBirth_year = data.birth_year;
+    setHeight = data.height;
+    setMass = data.mass;
+    setHomeworld = data.homeworld;
+    setSpecies = data.species;
   };
 
   React.useEffect(() => {
-    const id = props.match.params.id;
-    API.fetchPersonDetails(id)
-      .then((data) => getData(data))
-      .catch((error) => console.error(error));
+    console.log('routerProps', routerProps)
+    // API.fetchPersonDetails()
+    //   .then((data) => getData(data))
+    //   .catch((error) => console.error(error));
   }, []);
 
   // React.useEffect(

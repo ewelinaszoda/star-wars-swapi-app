@@ -22,9 +22,9 @@ function PersonDetails(props) {
   };
 
   React.useEffect(() => {
-    const id = props.match.params.id;
+    const id = props.match.params.id
     API.fetchPersonDetails(id)
-      .then((data) => getData(data))
+      .then((data) => console.log(data))
       .catch((error) => console.error(error));
   }, []);
 

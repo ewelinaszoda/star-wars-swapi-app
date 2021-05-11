@@ -20,7 +20,7 @@ const PeopleList = ({ people, personId, handleClick }) => {
           <Card.Text>
             Gender: {person.gender} | Hair color: {person.hair_color}
           </Card.Text>
-          <Link to={`/people/${i +1}/`} style={{ textDecoration: 'none' }}>
+          <Link to={`/people/${person.ulr}/`} style={{ textDecoration: 'none' }}>
             <Button variant="secondary">Show more details </Button>
           </Link>
         </Card.Body>

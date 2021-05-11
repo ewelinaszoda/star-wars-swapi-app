@@ -25,7 +25,7 @@ function App() {
   }, []);
 
   const handleClick = (id) => {
-    setPersonId({ id });
+    setPersonId({id});
   };
 
   const updateUserSearch = (e) => {
@@ -69,7 +69,7 @@ function App() {
               <Home
                 people={people}
                 userSearch={userSearch}
-                personId={personId}
+                // personId={personId}
                 handleClick={handleClick}
               />
             </Route>
@@ -79,15 +79,10 @@ function App() {
             <Route exact path="/starships">
               <Starships starships={starships} />
             </Route>
-            <Route
-              exact
-              path="/people/:id"
-              render={(routerProps) => <PersonDetails {...routerProps} />}
-            />
-            {/* <Route path="/people/:id">
-
-                <PersonDetails id={ }/>
-            </Route> */}
+            <Route path={`/people/${setPersonId}/`}>
+             {personId && <PersonDetails people={people} personId={personId} />}
+             {personId.url && <PersonDetails people={people} personId={personId} />}
+            </Route>
           </Switch>
         )}
       </Router>

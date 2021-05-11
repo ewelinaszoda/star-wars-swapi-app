@@ -12,19 +12,19 @@ function PersonDetails(props) {
   const [species, setSpecies] = React.useState([]);
 
   const getData = (data) => {
-    setId(data.id);
-    setName(data.name);
-    setBirth_year(data.birth_year);
-    setHeight(data.height);
-    setMass(data.mass);
-    setHomeworld(data.homeworld);
-    setSpecies(data.species);
+    setId = data.id;
+    setName = data.name;
+    setBirth_year = data.birth_year;
+    setHeight = data.height;
+    setMass = data.mass;
+    setHomeworld = data.homeworld;
+    setSpecies = data.species;
   };
 
   React.useEffect(() => {
-    const id = props.match.params.id;
+    const id = props.match.params.id
     API.fetchPersonDetails(id)
-      .then((data) => getData(data))
+      .then((data) => console.log(data))
       .catch((error) => console.error(error));
   }, []);
 

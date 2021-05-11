@@ -22,9 +22,9 @@ function PersonDetails(props) {
   };
 
   React.useEffect(() => {
-    const id = props.match.params.id;
+    const id = props.match.params.id
     API.fetchPersonDetails(id)
-      .then((data) => getData(data))
+      .then((data) => console.log(data))
       .catch((error) => console.error(error));
   }, []);
 
@@ -53,7 +53,7 @@ function PersonDetails(props) {
         </thead>
         <tbody id="character-table-body">
           <tr>
-            <td className="cell-name">{name}</td>
+            <td className="cell-name">{data.name}</td>
             <td className="cell-birthday">{birth_year}</td>
             <td className="cell-height">{height}</td>
             <td className="cell-mass">{mass}</td>
