@@ -64,6 +64,8 @@ function App() {
               <Home
                 people={people}
                 userSearch={userSearch}
+              
+                handleClick={handleClick}
               />
             </Route>
             <Route exact path="/planets">

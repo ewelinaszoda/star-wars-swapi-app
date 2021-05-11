@@ -16,28 +16,30 @@ const Planets = ({ planets }) => {
         <Card.Body>
           <Card.Title style={{ color: 'yellow' }}>{planet.name}</Card.Title>
           <Card.Text>
-            <strong>Climate : </strong>
-            {planet.climate}
-          </Card.Text>
-          <Card.Text>
-            <strong>Terrain : </strong>
-            {planet.terrain}
-          </Card.Text>
-          <Card.Text>
-            <strong>Gravity : </strong>
-            {planet.gravity}
-          </Card.Text>
-          <Card.Text>
-            <strong>Diameter : </strong>
-            {planet.diameter}
-          </Card.Text>
-          <Card.Text>
-            <strong>Orbital Period : </strong>
-            {planet.orbital_period}
-          </Card.Text>
-          <Card.Text>
-            <strong>Rotation Period : </strong>
-            {planet.rotation_period}
+          
+              <strong>Climate : </strong>
+              {planet.climate}
+              </Card.Text>
+              <Card.Text>
+              <strong>Terrain : </strong>
+              {planet.terrain}
+              </Card.Text>
+              <Card.Text>
+              <strong>Gravity : </strong>
+              {planet.gravity}
+              </Card.Text>
+              <Card.Text>
+              <strong>Diameter : </strong>
+              {planet.diameter}
+              </Card.Text>
+              <Card.Text>
+              <strong>Orbital Period : </strong>
+              {planet.orbital_period}
+              </Card.Text>
+            <p>
+              <strong>Rotation Period : </strong>
+              {planet.rotation_period}
+            </p>
           </Card.Text>
         </Card.Body>
       </Card>
@@ -50,7 +52,7 @@ const Planets = ({ planets }) => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <h2 style={{ color: 'grey' }}>Planets</h2>
+      <h2 style={{color: 'grey'}}>Planets</h2>
       <div style={{ display: 'inline-block' }}>{renderPlanetCard()}</div>
     </div>
   );

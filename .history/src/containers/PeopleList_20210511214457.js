@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 const PeopleList = ({ people }) => {
   const renderPersonCard = () => {
-    return people?.map((person, index) => (
+    return people?.map((person, i) => (
       <Card
-        key={index}
+        key={person.id}
         person={person}
+        onClick={() => handleClick(person.id)}
         style={{ width: '18rem' }}
         text="light"
         bg={'Info'.toLowerCase()}
@@ -19,7 +20,7 @@ const PeopleList = ({ people }) => {
           <Card.Text>
             Gender: {person.gender} | Hair color: {person.hair_color}
           </Card.Text>
-          <Link to={`/people/${index +1}/`} style={{ textDecoration: 'none' }}>
+          <Link to={`/people/${i +1}/`} style={{ textDecoration: 'none' }}>
             <Button variant="secondary">Show more details </Button>
           </Link>
         </Card.Body>
@@ -29,8 +30,8 @@ const PeopleList = ({ people }) => {
 
   return (
     <div style={{ width: '100%' }}>
-      <div className="row" style={{ margin: '20px 5px' }}>
-        <div className="col-sm-6">{renderPersonCard()}</div>
+      <div class="row" style={{ margin: '20px 5px' }}>
+        <div class="col-sm-6">{renderPersonCard()}</div>
       </div>
       <div>
         <h2>people object</h2>

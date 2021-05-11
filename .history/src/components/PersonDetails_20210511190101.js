@@ -3,7 +3,7 @@ import API from '../API';
 import { Table } from 'react-bootstrap';
 
 function PersonDetails(props) {
-  // const [id, setId] = React.useState(0);
+  const [id, setId] = React.useState(0);
   const [name, setName] = React.useState('');
   const [birth_year, setBirth_year] = React.useState('');
   const [height, setHeight] = React.useState('');
@@ -12,7 +12,7 @@ function PersonDetails(props) {
   const [species, setSpecies] = React.useState([]);
 
   const getData = (data) => {
-    // setId(data.id);
+    setId(data.id);
     setName(data.name);
     setBirth_year(data.birth_year);
     setHeight(data.height);
@@ -26,7 +26,7 @@ function PersonDetails(props) {
     API.fetchPersonDetails(id)
       .then((data) => getData(data))
       .catch((error) => console.error(error));
-  }, [props.match.params.id]);
+  }, []);
 
   return (
     <div id="character-table">
@@ -52,9 +52,9 @@ function PersonDetails(props) {
             {/* how to fetch homeworld */}
             <td>
               <ul className="cell-species">
-                {species.map((s, index) => (
-                  <li key={index}>
-                    {s}
+                {species.map((s) => (
+                  <li key={s.id}>
+                    {s.amount} - {s.classification}
                   </li>
                 ))}
               </ul>

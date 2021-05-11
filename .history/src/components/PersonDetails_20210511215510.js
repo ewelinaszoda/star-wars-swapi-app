@@ -54,7 +54,7 @@ function PersonDetails(props) {
               <ul className="cell-species">
                 {species.map((s, index) => (
                   <li key={index}>
-                    {s}
+                    {s.amount}
                   </li>
                 ))}
               </ul>

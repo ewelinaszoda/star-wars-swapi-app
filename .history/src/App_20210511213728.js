@@ -23,6 +23,10 @@ function App() {
     setLoading(false);
   }, []);
 
+  const handleClick = (id) => {
+    setPersonId({ id });
+  };
+
   const updateUserSearch = (e) => {
     setUserSearch(e.target.value);
   };
@@ -64,6 +68,8 @@ function App() {
               <Home
                 people={people}
                 userSearch={userSearch}
+                personId={personId}
+                handleClick={handleClick}
               />
             </Route>
             <Route exact path="/planets">

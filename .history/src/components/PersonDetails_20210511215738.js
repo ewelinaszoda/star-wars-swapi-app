@@ -52,6 +52,7 @@ function PersonDetails(props) {
             {/* how to fetch homeworld */}
             <td>
               <ul className="cell-species">
+                console.log({species})
                 {species.map((s, index) => (
                   <li key={index}>
                     {s}

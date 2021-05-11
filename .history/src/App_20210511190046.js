@@ -15,6 +15,7 @@ function App() {
   const [starships, setStarships] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [userSearch, setUserSearch] = React.useState('');
+  const { personId, setPersonId } = React.useState(null);
 
   React.useEffect(() => {
     getPeople();
@@ -22,6 +23,10 @@ function App() {
     getStarships();
     setLoading(false);
   }, []);
+
+  const handleClick = (id) => {
+    setPersonId({ id });
+  };
 
   const updateUserSearch = (e) => {
     setUserSearch(e.target.value);
@@ -64,6 +69,8 @@ function App() {
               <Home
                 people={people}
                 userSearch={userSearch}
+                personId={personId}
+                handleClick={handleClick}
               />
             </Route>
             <Route exact path="/planets">

@@ -26,7 +26,7 @@ function PersonDetails(props) {
     API.fetchPersonDetails(id)
       .then((data) => getData(data))
       .catch((error) => console.error(error));
-  }, [props.match.params.id]);
+  }, [{props.match.params.id']);
 
   return (
     <div id="character-table">
@@ -52,9 +52,9 @@ function PersonDetails(props) {
             {/* how to fetch homeworld */}
             <td>
               <ul className="cell-species">
-                {species.map((s, index) => (
-                  <li key={index}>
-                    {s}
+                {species.map((s) => (
+                  <li key={s.id}>
+                    {s.amount} - {s.classification}
                   </li>
                 ))}
               </ul>

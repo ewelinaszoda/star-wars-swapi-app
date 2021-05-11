@@ -53,8 +53,8 @@ function PersonDetails(props) {
             <td>
               <ul className="cell-species">
                 {species.map((s, index) => (
-                  <li key={index}>
-                    {s}
+                  <li key={s.id}>
+                    {s.amount} - {s.classification}
                   </li>
                 ))}
               </ul>

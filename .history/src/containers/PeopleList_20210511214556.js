@@ -6,7 +6,7 @@ const PeopleList = ({ people }) => {
   const renderPersonCard = () => {
     return people?.map((person, index) => (
       <Card
-        key={index}
+        key={person.id}
         person={person}
         style={{ width: '18rem' }}
         text="light"
@@ -29,8 +29,8 @@ const PeopleList = ({ people }) => {
 
   return (
     <div style={{ width: '100%' }}>
-      <div className="row" style={{ margin: '20px 5px' }}>
-        <div className="col-sm-6">{renderPersonCard()}</div>
+      <div class="row" style={{ margin: '20px 5px' }}>
+        <div class="col-sm-6">{renderPersonCard()}</div>
       </div>
       <div>
         <h2>people object</h2>

@@ -29,7 +29,7 @@ const PeopleList = ({ people }) => {
 
   return (
     <div style={{ width: '100%' }}>
-      <div className="row" style={{ margin: '20px 5px' }}>
+      <div class="row" style={{ margin: '20px 5px' }}>
         <div className="col-sm-6">{renderPersonCard()}</div>
       </div>
       <div>

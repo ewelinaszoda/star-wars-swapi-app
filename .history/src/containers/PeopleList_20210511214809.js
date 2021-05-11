@@ -11,7 +11,7 @@ const PeopleList = ({ people }) => {
         style={{ width: '18rem' }}
         text="light"
         bg={'Info'.toLowerCase()}
-        className="mb-2"
+        // className="mb-2"
       >
         <Card.Header>Birth year: {person.birth_year}</Card.Header>
         <Card.Body>
@@ -29,8 +29,8 @@ const PeopleList = ({ people }) => {
 
   return (
     <div style={{ width: '100%' }}>
-      <div className="row" style={{ margin: '20px 5px' }}>
-        <div className="col-sm-6">{renderPersonCard()}</div>
+      <div class="row" style={{ margin: '20px 5px' }}>
+        <div class="col-sm-6">{renderPersonCard()}</div>
       </div>
       <div>
         <h2>people object</h2>
