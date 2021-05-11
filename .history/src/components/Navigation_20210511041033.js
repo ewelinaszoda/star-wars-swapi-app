@@ -6,7 +6,7 @@ const Navigation = () => {
   const location = useLocation();
 
   const renderSearch = () => {
-    if (location.pathname === '/')
+    if (location.pathname === '/home')
       return (
         <>
           <Form inline>
@@ -25,7 +25,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/home">
           <img
             alt="Star Wars logo"
             src={logo}
