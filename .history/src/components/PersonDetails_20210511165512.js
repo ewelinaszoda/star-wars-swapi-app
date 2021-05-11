@@ -56,9 +56,7 @@ function PersonDetails({ people, personId }) {
             <td className="cell-birthday">{birth_year}</td>
             <td className="cell-height">{height}</td>
             <td className="cell-mass">{mass}</td>
-            {/* how to fetch homeworld */}
             <td className="cell-homeworld">{homeworld}</td>
-            {/* how to fetch homeworld */}
             <td>
               <ul className="cell-species">
                 {species.map((s) => (
