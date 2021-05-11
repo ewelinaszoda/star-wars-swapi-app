@@ -14,7 +14,6 @@ function App() {
   const [starships, setStarships] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [userSearch, setUserSearch] = React.useState('');
-  const {personId, setPersonId} = React.useState(null)
 
   React.useEffect(() => {
     getPeople();
@@ -69,7 +68,7 @@ function App() {
             <Route exact path="/starships">
               <Starships starships={starships} />
             </Route>
-            <Route path={`/people/${setPersonId}/`}>
+            <Route exact path="/starships">
               <Starships starships={starships} />
             </Route>
           </Switch>

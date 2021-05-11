@@ -18,29 +18,30 @@ const Planets = ({ planets }) => {
           <Card.Text>
             <p>
               <strong>Climate : </strong>
-              {planet.climate}
+              {planet && planet.climate}
             </p>
             <p>
               <strong>Terrain : </strong>
-              {planet.terrain}
+              {planet && planet.terrain}
             </p>
             <p>
               <strong>Gravity : </strong>
-              {planet.gravity}
+              {planet && planet.gravity}
             </p>
             <p>
               <strong>Diameter : </strong>
-              {planet.diameter}
+              {planet && planet.diameter}
             </p>
             <p>
               <strong>Orbital Period : </strong>
-              {planet.orbital_period}
+              {planet && planet.orbital_period}
             </p>
             <p>
               <strong>Rotation Period : </strong>
-              {planet.rotation_period}
+              {planet && planet.rotation_period}
             </p>
           </Card.Text>
+          <Card.Text>Climate: {planet.climate}</Card.Text>
         </Card.Body>
       </Card>
     ));
@@ -52,7 +53,7 @@ const Planets = ({ planets }) => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <h2 style={{color: 'grey'}}>Planets</h2>
+      <h2>Planets</h2>
       <div style={{ display: 'inline-block' }}>{renderPlanetCard()}</div>
     </div>
   );

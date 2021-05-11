@@ -52,7 +52,7 @@ const Planets = ({ planets }) => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <h2 style={{color: 'grey'}}>Planets</h2>
+      <h2 style={{color: ''}}>Planets</h2>
       <div style={{ display: 'inline-block' }}>{renderPlanetCard()}</div>
     </div>
   );

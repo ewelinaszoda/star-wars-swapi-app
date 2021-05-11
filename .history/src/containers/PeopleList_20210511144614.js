@@ -19,7 +19,7 @@ const PeopleList = ({ people }) => {
           <Card.Text>
             Gender: {person.gender} | Hair color: {person.hair_color}
           </Card.Text>
-          <Link to={`/people/${person.id}/`} style={{ textDecoration: 'none' }}>
+          <Link to={`/people/${peopple/id}/`} style={{ textDecoration: 'none' }}>
             <Button variant="secondary">Show more details </Button>
           </Link>
         </Card.Body>

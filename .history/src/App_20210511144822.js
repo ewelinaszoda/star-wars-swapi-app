@@ -69,7 +69,7 @@ function App() {
             <Route exact path="/starships">
               <Starships starships={starships} />
             </Route>
-            <Route path={`/people/${setPersonId}/`}>
+            <Route path={`/people/${PersonId}/`}>
               <Starships starships={starships} />
             </Route>
           </Switch>

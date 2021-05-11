@@ -3,6 +3,12 @@ import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const PeopleList = ({ people }) => {
+  // const [personId, setPersonId] = React.useState(null);
+
+  const handleClick = (id) => {
+    setPersonId(id);
+  };
+
   const renderPersonCard = () => {
     return people?.map((person, index) => (
       <Card
@@ -20,7 +26,9 @@ const PeopleList = ({ people }) => {
             Gender: {person.gender} | Hair color: {person.hair_color}
           </Card.Text>
           <Link to={`/people/${person.id}/`} style={{ textDecoration: 'none' }}>
-            <Button variant="secondary">Show more details </Button>
+            <Button variant="secondary" handleClick={handleClick}>
+              Show more details{' '}
+            </Button>
           </Link>
         </Card.Body>
       </Card>
@@ -31,10 +39,6 @@ const PeopleList = ({ people }) => {
     <div style={{ width: '100%' }}>
       <div class="row" style={{ margin: '20px 5px' }}>
         <div class="col-sm-6">{renderPersonCard()}</div>
-      </div>
-      <div>
-        <h2>people object</h2>
-        <pre style={{ color: 'white' }}>{JSON.stringify(people, null, 2)}</pre>
       </div>
     </div>
   );

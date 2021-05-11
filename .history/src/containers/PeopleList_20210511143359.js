@@ -32,10 +32,6 @@ const PeopleList = ({ people }) => {
       <div class="row" style={{ margin: '20px 5px' }}>
         <div class="col-sm-6">{renderPersonCard()}</div>
       </div>
-      <div>
-        <h2>people object</h2>
-        <pre style={{ color: 'white' }}>{JSON.stringify(people, null, 2)}</pre>
-      </div>
     </div>
   );
 };

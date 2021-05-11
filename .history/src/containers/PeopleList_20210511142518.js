@@ -1,17 +1,27 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const PeopleList = ({ people }) => {
+
+
+  const [personId, setPersonId] = React.useState(null);
+
+  const handleClick = (id) => {
+    setPersonId(id)
+  }
+
   const renderPersonCard = () => {
     return people?.map((person, index) => (
       <Card
         key={index}
         person={person}
+        onClick={}
         style={{ width: '18rem' }}
         text="light"
         bg={'Info'.toLowerCase()}
         className="mb-2"
+        handleClick={}
       >
         <Card.Header>Birth year: {person.birth_year}</Card.Header>
         <Card.Body>
@@ -19,8 +29,8 @@ const PeopleList = ({ people }) => {
           <Card.Text>
             Gender: {person.gender} | Hair color: {person.hair_color}
           </Card.Text>
-          <Link to={`/people/${person.id}/`} style={{ textDecoration: 'none' }}>
-            <Button variant="secondary">Show more details </Button>
+          <Link to={`/people/${index+1}/`} style={{ textDecoration: 'none' }}>
+          <Button variant="secondary">Show more details</Button>
           </Link>
         </Card.Body>
       </Card>
@@ -31,10 +41,6 @@ const PeopleList = ({ people }) => {
     <div style={{ width: '100%' }}>
       <div class="row" style={{ margin: '20px 5px' }}>
         <div class="col-sm-6">{renderPersonCard()}</div>
-      </div>
-      <div>
-        <h2>people object</h2>
-        <pre style={{ color: 'white' }}>{JSON.stringify(people, null, 2)}</pre>
       </div>
     </div>
   );

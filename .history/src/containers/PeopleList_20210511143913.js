@@ -34,7 +34,7 @@ const PeopleList = ({ people }) => {
       </div>
       <div>
         <h2>people object</h2>
-        <pre style={{ color: 'white' }}>{JSON.stringify(people, null, 2)}</pre>
+        <pre style>{JSON.stringify(people, null, 2)}</pre>
       </div>
     </div>
   );

@@ -3,11 +3,7 @@ import background from '../background.jpeg';
 
 const Starships = ({ starships }) => {
   return (
-    <div
-      style={{
-        backgroundImage: `url(${background})`,
-      }}
-    >
+    <div>
       <h2>Starships</h2>
       {/* <PeopleContainer people={people} /> */}
     </div>
