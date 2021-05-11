@@ -4,6 +4,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import People from './pages/People.js';
 import Planets from './pages/Planets';
 import Vehicles from './pages/Vehicles';
 import Spinner from './components/Spinner';
@@ -50,6 +51,11 @@ function App() {
 
   return (
     <>
+        <div
+    style={{
+      backgroundImage: `url(${background})`,  backgroundSize: '100%', backgroundRepeat: 'no-repeat'
+    }}
+  >
       <Router>
         <Navigation
           updateUserSearch={updateUserSearch}
@@ -61,6 +67,9 @@ function App() {
           <Switch>
             <Route exact path="/">
               <Home people={people} userSearch={userSearch} />
+            </Route>
+            <Route exact path="/people">
+              <People people={people} />
             </Route>
             <Route exact path="/planets">
               <Planets planets={planets} />

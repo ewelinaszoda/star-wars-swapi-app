@@ -43,6 +43,7 @@ const Navigation = ({ userSearch, updateUserSearch }) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
+
             <Nav.Link href="/planets">Planets</Nav.Link>
             <Nav.Link href="/vehicles">Vehicles</Nav.Link>
           </Nav>

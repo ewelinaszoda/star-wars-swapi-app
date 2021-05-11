@@ -62,6 +62,9 @@ function App() {
             <Route exact path="/">
               <Home people={people} userSearch={userSearch} />
             </Route>
+            <Route exact path="/people">
+              <People people={people} />
+            </Route>
             <Route exact path="/planets">
               <Planets planets={planets} />
             </Route>
