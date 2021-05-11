@@ -22,7 +22,6 @@ function App() {
   }, []);
 
 
-
   const updateUserSearch = (e) => {
     setUserSearch(e.target.value);
   };
@@ -52,13 +51,11 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation
-          updateUserSearch={updateUserSearch}
-          userSearch={userSearch}
-        />
+        <Navigation     updateUserSearch={updateUserSearch}
+        userSearch={userSearch}/>
         <Switch>
           <Route exact path="/">
-            <Home people={people} userSearch={userSearch}/>
+            <Home people={people} />
           </Route>
           <Route exact path="/people">
             <People people={people} />

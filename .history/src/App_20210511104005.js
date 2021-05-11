@@ -21,7 +21,11 @@ function App() {
     getVehicles();
   }, []);
 
-
+  const filterPeople = () => {
+    return people.filter((p) =>
+      p.name.toUpperCase().includes(userSearch.toUpperCase())
+    );
+  };
 
   const updateUserSearch = (e) => {
     setUserSearch(e.target.value);
@@ -58,7 +62,7 @@ function App() {
         />
         <Switch>
           <Route exact path="/">
-            <Home people={people} userSearch={userSearch}/>
+            <Home people={people} />
           </Route>
           <Route exact path="/people">
             <People people={people} />

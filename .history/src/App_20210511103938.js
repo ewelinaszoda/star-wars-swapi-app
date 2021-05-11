@@ -21,8 +21,6 @@ function App() {
     getVehicles();
   }, []);
 
-
-
   const updateUserSearch = (e) => {
     setUserSearch(e.target.value);
   };
@@ -58,7 +56,7 @@ function App() {
         />
         <Switch>
           <Route exact path="/">
-            <Home people={people} userSearch={userSearch}/>
+            <Home people={people} />
           </Route>
           <Route exact path="/people">
             <People people={people} />

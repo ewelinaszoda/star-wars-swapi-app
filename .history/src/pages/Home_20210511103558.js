@@ -2,14 +2,14 @@ import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import hero from '../hero.png';
 import background from '../background.jpeg';
-import PeopleList from '../containers/PeopleList';
+import PeopleList from '..'
 
-const Home = ({ people, userSearch }) => {
-  // const [userSearch, setUserSearch] = React.useState('');
+const Home = ({ people }) => {
+  const [userSearch, setUserSearch] = React.useState('');
 
-  // const updateUserSearch = (e) => {
-  //   setUserSearch(e.target.value);
-  // };
+  const updateUserSearch = (e) => {
+    setUserSearch(e.target.value);
+  };
 
   const filterPeople = () => {
     return people.filter((p) =>

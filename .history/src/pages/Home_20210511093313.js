@@ -1,0 +1,23 @@
+import React from 'react';
+import PeopleContainer from '../containers/PeopleContainer.js';
+
+const Home = ({ people }) => {
+  const renderPersonDiv = () => {
+    return people?.map((person, index) => (
+      <div key={index}>
+        <h3>Name: {person.name}</h3>
+        <h4>Height: {person.height}</h4>
+      </div>
+    ));
+  return (
+    <div>
+        <h2>LIST OF CHARACTERS</h2>
+        hero
+        <div style={{ width: '100%' }}>
+      <div>{renderPersonCard()}</div>
+    </div>
+      </div>
+  );
+};
+
+export default Home;

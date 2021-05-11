@@ -21,12 +21,6 @@ function App() {
     getVehicles();
   }, []);
 
-
-
-  const updateUserSearch = (e) => {
-    setUserSearch(e.target.value);
-  };
-
   const getPeople = () => {
     API.fetchAllPeople()
       .then((data) => setPeople(data.results))
@@ -52,13 +46,10 @@ function App() {
   return (
     <>
       <Router>
-        <Navigation
-          updateUserSearch={updateUserSearch}
-          userSearch={userSearch}
-        />
+        <Navigation />
         <Switch>
           <Route exact path="/">
-            <Home people={people} userSearch={userSearch}/>
+            <Home people={people} />
           </Route>
           <Route exact path="/people">
             <People people={people} />

@@ -4,7 +4,7 @@ import hero from '../hero.png';
 import background from '../background.jpeg';
 import PeopleList from '../containers/PeopleList';
 
-const Home = ({ people, userSearch }) => {
+const Home = ({ people }) => {
   // const [userSearch, setUserSearch] = React.useState('');
 
   // const updateUserSearch = (e) => {

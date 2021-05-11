@@ -2,10 +2,10 @@ import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../logo.png';
 // import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 const Navigation = ({ userSearch, updateUserSearch }) => {
-  const location = useLocation();
+  const location = React.useLocation();
 
   const renderSearch = () => {
     if (location.pathname === '/')

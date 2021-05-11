@@ -2,28 +2,26 @@ import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../logo.png';
 // import { Link } from 'react-router-dom'
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
-const Navigation = ({ userSearch, updateUserSearch }) => {
-  const location = useLocation();
+const Navigation = () => {
+  // const location = useLocation();
 
   const renderSearch = () => {
-    if (location.pathname === '/')
-      return (
-        <>
-          <Form inline className="mr-xs-none">
-            <FormControl
-              type="text"
-              placeholder="Search for character..."
-              className="mr-sm-2"
-              onChange={(e) => updateUserSearch(e)}
-              value={userSearch}
-            />
-            <Button variant="outline-info">Search</Button>
-          </Form>
-        </>
-      );
-    else return <>''</>;
+    // if (location.pathname === '/')
+    return (
+      <>
+        <Form inline className="mr-xs-none">
+          <FormControl
+            type="text"
+            placeholder="Search for character..."
+            className="mr-sm-2"
+          />
+          <Button variant="outline-info">Search</Button>
+        </Form>
+      </>
+    );
+    // else return <></>;
   };
 
   return (

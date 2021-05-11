@@ -4,18 +4,18 @@ import hero from '../hero.png';
 import background from '../background.jpeg';
 import PeopleList from '../containers/PeopleList';
 
-const Home = ({ people, userSearch }) => {
+const Home = ({ people }) => {
   // const [userSearch, setUserSearch] = React.useState('');
 
   // const updateUserSearch = (e) => {
   //   setUserSearch(e.target.value);
   // };
 
-  const filterPeople = () => {
-    return people.filter((p) =>
-      p.name.toUpperCase().includes(userSearch.toUpperCase())
-    );
-  };
+  // const filterPeople = () => {
+  //   return people.filter((p) =>
+  //     p.name.toUpperCase().includes(userSearch.toUpperCase())
+  //   );
+  // };
 
   // const renderPersonDiv = () => {
   //   return people?.map((person, index) => (

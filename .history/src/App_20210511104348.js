@@ -58,7 +58,7 @@ function App() {
         />
         <Switch>
           <Route exact path="/">
-            <Home people={people} userSearch={userSearch}/>
+            <Home people={people} userSearch/>
           </Route>
           <Route exact path="/people">
             <People people={people} />

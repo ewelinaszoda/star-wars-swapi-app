@@ -5,7 +5,7 @@ import logo from '../logo.png';
 import { useLocation } from 'react-router-dom';
 
 const Navigation = ({ userSearch, updateUserSearch }) => {
-  const location = useLocation();
+  const location = .useLocation();
 
   const renderSearch = () => {
     if (location.pathname === '/')
