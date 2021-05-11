@@ -7,7 +7,7 @@ const Planets = ({ planets }) => {
     <>
         <h2>Planets</h2>
         {/* <PeopleContainer people={people} /> */}
-      </>
+      </div>
   );
 };
 
