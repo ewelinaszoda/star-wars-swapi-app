@@ -6,12 +6,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import People from './PeoplePage';
 import Planet from './PlanetPage';
-import Vehicles from './VehiclesPage';
+import Species from './VehiclesPage';
 
 function App() {
   const [people, setPeople] = React.useState([]);
   const [planets, setPlanets] = React.useState([]);
-  const [vehicles, setVehicles] = React.useState([]);
+  const [Species, setVehicles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
 
   console.log('people', people);
   console.log('planets', planets);
-  console.log('vehicles', vehicles);
+  console.log('Species', Species);
 
   return (
     <>
@@ -56,8 +56,8 @@ function App() {
           <Route exact path="/planets">
             <Planets planets={planets} />
           </Route>
-          <Route exact path="/vehicles">
-            <vehicles vehicles={vehicles} />
+          <Route exact path="/Species">
+            <Species Species={Species} />
           </Route>
         </Switch>
       </Router>

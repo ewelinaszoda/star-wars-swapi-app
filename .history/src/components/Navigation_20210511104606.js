@@ -4,7 +4,7 @@ import logo from '../logo.png';
 // import { Link } from 'react-router-dom'
 // import { useLocation } from 'react-router-dom';
 
-const Navigation = (  userSearch, {updateUserSearch, }) => {
+const Navigation = (userSearch, { updateUserSearch }) => {
   // const location = useLocation();
 
   const renderSearch = () => {
@@ -43,7 +43,7 @@ const Navigation = (  userSearch, {updateUserSearch, }) => {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/people">People</Nav.Link>
             <Nav.Link href="/planets">Planets</Nav.Link>
-            <Nav.Link href="/vehicles">Vehicles</Nav.Link>
+            <Nav.Link href="/Species">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

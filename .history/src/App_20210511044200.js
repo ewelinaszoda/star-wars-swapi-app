@@ -4,10 +4,9 @@ import './App.css';
 import Navigation from './components/Navigation';
 
 function App() {
-
   const [people, setPeople] = React.useState([]);
   const [planets, setPlanets] = React.useState([]);
-  const [vehicles, setVehicles] = React.useState([]);
+  const [Species, setVehicles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -36,14 +35,13 @@ function App() {
 
   console.log('people', people);
   console.log('planets', planets);
-  console.log('vehicles', vehicles);
+  console.log('Species', Species);
 
   return (
     <>
-    <div className="App">
-      <Navigation />
-    </div>
-
+      <div className="App">
+        <Navigation />
+      </div>
     </>
   );
 }

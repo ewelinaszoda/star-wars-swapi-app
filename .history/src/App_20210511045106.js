@@ -2,13 +2,12 @@ import React from 'react';
 import API from './API';
 import './App.css';
 import Navigation from './components/Navigation';
-import {BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
-
   const [people, setPeople] = React.useState([]);
   const [planets, setPlanets] = React.useState([]);
-  const [vehicles, setVehicles] = React.useState([]);
+  const [Species, setVehicles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -37,17 +36,12 @@ function App() {
 
   console.log('people', people);
   console.log('planets', planets);
-  console.log('vehicles', vehicles);
+  console.log('Species', Species);
 
   return (
     <>
-<Router>
-  
-</Router>
+      <Router></Router>
       <Navigation />
-
-    
-
     </>
   );
 }

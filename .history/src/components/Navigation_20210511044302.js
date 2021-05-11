@@ -16,11 +16,7 @@ const Navigation = () => {
             placeholder="Search for character..."
             className="mr-sm-2"
           />
-          <Button
-            variant="outline-info"
-          >
-            Search
-          </Button>
+          <Button variant="outline-info">Search</Button>
         </Form>
       </>
     );
@@ -28,7 +24,6 @@ const Navigation = () => {
   };
 
   return (
-    
     <>
       <Navbar bg="dark" expand="lg" variant="dark">
         <Navbar.Brand href="#home">
@@ -46,7 +41,7 @@ const Navigation = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">People</Nav.Link>
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

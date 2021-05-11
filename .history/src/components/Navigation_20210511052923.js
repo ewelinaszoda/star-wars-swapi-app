@@ -44,7 +44,7 @@ const Navigation = () => {
 
             <Nav.Link href="/people">People</Nav.Link>
             <Nav.Link href="/planets">Planets</Nav.Link>
-            <Nav.Link href="/vehicles">Vehicles</Nav.Link>
+            <Nav.Link href="/Species">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

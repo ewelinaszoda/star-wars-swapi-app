@@ -3,8 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import logo from '../logo.png';
 
 const Navigation = () => {
-
-  const location = useLocation()
+  const location = useLocation();
 
   return (
     <>
@@ -24,7 +23,7 @@ const Navigation = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">People</Nav.Link>
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch}

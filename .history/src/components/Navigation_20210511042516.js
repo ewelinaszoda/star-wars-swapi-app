@@ -8,19 +8,21 @@ const Navigation = () => {
 
   const renderSearch = () => {
     // if (location.pathname === '/')
-      return (
-        <>
-          <Form inline>
-            <FormControl
-              type="text"
-              placeholder="Search for character..."
-              className="mr-sm-2 d-xs-none"
-              className="mr-sm-2"
-            />
-            <Button variant="outline-info"    className="mr-sm-2 d-xs-none">Search</Button>
-          </Form>
-        </>
-      );
+    return (
+      <>
+        <Form inline>
+          <FormControl
+            type="text"
+            placeholder="Search for character..."
+            className="mr-sm-2 d-xs-none"
+            className="mr-sm-2"
+          />
+          <Button variant="outline-info" className="mr-sm-2 d-xs-none">
+            Search
+          </Button>
+        </Form>
+      </>
+    );
     // else return <></>;
   };
 
@@ -42,7 +44,7 @@ const Navigation = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">People</Nav.Link>
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

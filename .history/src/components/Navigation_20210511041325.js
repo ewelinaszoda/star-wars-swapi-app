@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav,Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../logo.png';
 import { useLocation } from 'react-router-dom';
 
@@ -42,7 +42,7 @@ const Navigation = () => {
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">People</Nav.Link>
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

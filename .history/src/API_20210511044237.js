@@ -1,6 +1,6 @@
 const BASE_URL = 'https://swapi.dev/api';
 
-// Improvement: I would refactoring the code below to one function fetchData 
+// Improvement: I would refactoring the code below to one function fetchData
 // with paramater data, where I will fetch(BASE_URL + `/{data}`)
 
 const fetchAllPeople = () => {
@@ -16,7 +16,7 @@ const fetchAllPlanets = () => {
 };
 
 const fetchAllVehicles = () => {
-  return fetch(BASE_URL + '/vehicles')
+  return fetch(BASE_URL + '/Species')
     .then((res) => res.json())
     .catch((error) => console.error(error));
 };

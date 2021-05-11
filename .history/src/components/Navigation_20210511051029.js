@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../logo.png';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 // import { useLocation } from 'react-router-dom';
 
 const Navigation = () => {
@@ -17,11 +17,7 @@ const Navigation = () => {
             placeholder="Search for character..."
             className="mr-sm-2"
           />
-          <Button
-            variant="outline-info"
-          >
-            Search
-          </Button>
+          <Button variant="outline-info">Search</Button>
         </Form>
       </>
     );
@@ -45,10 +41,10 @@ const Navigation = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            
+
             <Nav.Link href="#link">People</Nav.Link>
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

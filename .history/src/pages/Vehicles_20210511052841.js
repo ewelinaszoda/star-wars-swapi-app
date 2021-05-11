@@ -1,14 +1,14 @@
 import React from 'react';
 // import PeopleContainer from '../containers/PeopleContainer.js';
 
-const Vehicles = ({vehicles}) => {
+const Species = ({Species}) => {
 
   return (
     <div>
-        <h2>Vehicles/h2>
+        <h2>Species/h2>
         {/* <PeopleContainer people={people} /> */}
       </div>
   );
 };
 
-export default Vehicles;
+export default Species;

@@ -52,7 +52,7 @@ const Navigation = () => {
             <Nav.Link href="#link">People</Nav.Link>
             <Link to="/">
             <Nav.Link href="#link">Planets</Nav.Link>
-            <Nav.Link href="#link">Vehicles</Nav.Link>
+            <Nav.Link href="#link">Species</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

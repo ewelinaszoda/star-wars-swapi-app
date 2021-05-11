@@ -6,13 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import People from './pages/People.js';
 import Planets from './pages/Planets';
-import Vehicles from './pages/Vehicles';
+import Species from './pages/Species';
 import Spinner from './components/Spinner';
 
 function App() {
   const [people, setPeople] = React.useState([]);
   const [planets, setPlanets] = React.useState([]);
-  const [vehicles, setVehicles] = React.useState([]);
+  const [Species, setVehicles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [userSearch, setUserSearch] = React.useState('');
 
@@ -47,15 +47,17 @@ function App() {
 
   console.log('people', people);
   console.log('planets', planets);
-  console.log('vehicles', vehicles);
+  console.log('Species', Species);
 
   return (
     <>
-        <div
-    style={{
-      backgroundImage: `url(${background})`,  backgroundSize: '100%', backgroundRepeat: 'no-repeat'
-    }}
-  ></div>
+      <div
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundSize: '100%',
+          backgroundRepeat: 'no-repeat',
+        }}
+      ></div>
       <Router>
         <Navigation
           updateUserSearch={updateUserSearch}
@@ -74,8 +76,8 @@ function App() {
             <Route exact path="/planets">
               <Planets planets={planets} />
             </Route>
-            <Route exact path="/vehicles">
-              <Vehicles vehicles={vehicles} />
+            <Route exact path="/Species">
+              <Species Species={Species} />
             </Route>
           </Switch>
         )}

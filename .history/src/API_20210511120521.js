@@ -16,7 +16,7 @@ const fetchAllPlanets = () => {
 };
 
 const fetchAllVehicles = () => {
-  return fetch(BASE_URL + '/vehicles')
+  return fetch(BASE_URL + '/Species')
     .then((res) => res.json())
     .catch((error) => console.error(error));
 };
