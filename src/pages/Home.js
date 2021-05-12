@@ -3,7 +3,7 @@ import hero from '../hero.png';
 import background from '../background.jpeg';
 import PeopleList from '../containers/PeopleList';
 
-const Home = ({ people, userSearch, personId, handleClick }) => {
+const Home = ({ people, userSearch }) => {
   const filterPeople = () => {
     return people.filter((p) =>
       p.name.toUpperCase().includes(userSearch.toUpperCase())
@@ -16,13 +16,20 @@ const Home = ({ people, userSearch, personId, handleClick }) => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <img src={hero} alt="Hero" />
-      <h2 style={{ display: 'center', color: 'grey' }}>LIST OF CHARACTERS</h2>
-      <PeopleList
-        people={filterPeople()}
-        personId={personId}
-        handleClick={handleClick}
-      />
+      <center>
+        <img
+          style={{
+            minWidth: '600px',
+            margin: '40px',
+          }}
+          src={hero}
+          alt="Hero"
+        />
+        <h2 style={{ color: 'grey', margin: '20px' }}>LIST OF CHARACTERS</h2>
+        <div style={{ margin: '20px' }}>
+          <PeopleList people={filterPeople()} />
+        </div>
+      </center>
     </div>
   );
 };

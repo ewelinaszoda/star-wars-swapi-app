@@ -24,8 +24,10 @@ const Starships = ({ starships }) => {
         backgroundImage: `url(${background})`,
       }}
     >
-      <h2 style={{ display: 'center', color: 'grey' }}>Starships</h2> <br />
-      <div className="col-sm-6">{renderStarshipCard()}</div>
+      <center>
+        <h2 style={{ color: 'grey', padding: '20px' }}>Starships</h2>
+        <div className="col-sm-6">{renderStarshipCard()}</div>
+      </center>
     </div>
   );
 };

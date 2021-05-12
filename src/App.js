@@ -45,10 +45,6 @@ function App() {
       .catch((error) => console.error(error));
   };
 
-  console.log('people', people);
-  console.log('planets', planets);
-  console.log('starships', starships);
-
   return (
     <>
       <Router>
