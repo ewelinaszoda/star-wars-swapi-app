@@ -10,6 +10,17 @@ function PersonDetails(props) {
   const [mass, setMass] = React.useState('');
   const [homeworld, setHomeworld] = React.useState('');
   const [species, setSpecies] = React.useState([]);
+  // const [homeworldInfo, setHomeworldInfo] = React.useState({});
+
+  // const getHomewordInfo = (url) => {
+  //   API.fetchInfo(url)
+  //     .then((data) => setHomeworldInfo(data))
+  //     .catch((error) => console.error(error));
+  // };
+
+  // React.useEffect(() => {
+  //   getHomewordInfo();
+  // }, [{homeworld}]);
 
   const getData = (data) => {
     // setId(data.id);
@@ -29,33 +40,35 @@ function PersonDetails(props) {
   }, [props.match.params.id]);
 
   return (
-    <div id="character-table">
-      <Table id="table" hover striped>
-        <thead id="character-table-header">
+    <div style={{ marginTop: '40px' }}>
+      <Table variant="dark" hover striped>
+        <thead>
           <tr>
-            <th className="cell-name">Name</th>
-            <th className="cell-birthday">D.o.B</th>
-            <th className="cell-height">Height</th>
-            <th className="cell-mass">Mass</th>
-            <th className="cell-homeworld">Homeworld</th>
-            <th className="cell-species">Species</th>
+            <th>Name</th>
+            <th>D.o.B</th>
+            <th>Height</th>
+            <th>Mass</th>
+            <th>Homeworld</th>
+            <th>Species</th>
           </tr>
         </thead>
-        <tbody id="character-table-body">
+        <tbody>
           <tr>
-            <td className="cell-name">{name}</td>
-            <td className="cell-birthday">{birth_year}</td>
-            <td className="cell-height">{height}</td>
-            <td className="cell-mass">{mass}</td>
+            <td>{name}</td>
+            <td>{birth_year}</td>
+            <td>{height}</td>
+            <td>{mass}</td>
             {/* how to fetch homeworld */}
-            <td className="cell-homeworld">{homeworld}</td>
+            {/* <td className="cell-homeworld">{getHomewordInfo(homeworld)}</td> */}
+            <td>{homeworld}</td>
             {/* how to fetch homeworld */}
             <td>
-              <ul className="cell-species">
+              <ul
+                className="cell-species"
+                style={{ listStyleType: 'none', padding: '0' }}
+              >
                 {species.map((s, index) => (
-                  <li key={index}>
-                    {s}
-                  </li>
+                  <li key={index}>{s}</li>
                 ))}
               </ul>
             </td>

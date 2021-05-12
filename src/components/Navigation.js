@@ -11,7 +11,7 @@ const Navigation = ({ userSearch, updateUserSearch }) => {
     if (location.pathname === '/')
       return (
         <>
-          <Form inline className="mr-xs-none">
+          <Form inline className="mr-xs-none d-none d-lg-block">
             <FormControl
               type="text"
               placeholder="Search for character..."
@@ -44,7 +44,7 @@ const Navigation = ({ userSearch, updateUserSearch }) => {
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/planets">Planets</Nav.Link>
-            <Nav.Link href="/Species">Starships</Nav.Link>
+            <Nav.Link href="/starships">Starships</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {renderSearch()}

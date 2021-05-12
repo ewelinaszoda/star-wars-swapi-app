@@ -26,10 +26,17 @@ const fetchPersonDetails = (id) => {
     .then((res) => res.json())
     .catch((error) => console.error(error));
 };
+
+// const fetchInfo = (url) => {
+//   return fetch(url)
+//     .then((res) => res.json())
+//     .catch((error) => console.error(error));
+// };
 // eslint-disable-next-line
 export default {
   fetchAllPeople,
   fetchAllPlanets,
   fetchAllStarships,
   fetchPersonDetails,
+  // fetchInfo,
 };
