@@ -1,43 +1,57 @@
-# Getting Started with Create React App
+# Star-wars-swapi app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Star wars App using https://swapi.dev/ API with quick access to information, and filter functionality. Improved user experience with responsive/mobile design techniques.
 
-## Available Scripts
+### Table of Contents
 
-In the project directory, you can run:
+Screenshots
+Technologies
+Usage and Features
+Installation
+License
 
-### `yarn start`
+### Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This project was created with:
 
-### `yarn test`
+React.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was bootstrapped with [Create React App](https://github.com/ewelinaszoda/star-wars-swapi-app).
+For styling has been used [React Bootstrap React](https://react-bootstrap.github.io/)
 
-### `yarn build`
+### Usage and Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Star wars App allows users to find information about star wars. Users can:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+View and search by character's name of all characters.
+See character's details clicking by button show details where will be redirected to page with information details about the chosen character.
+Link to planet's and species' details related to chose character.
+View all characters, planets and starships available on API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instalation
 
-### `yarn eject`
+To use the Star wars App locally, you will need Git and Node Package Manager installed. You will only need to clone this repo and launch the frontend to start. Run following commands:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+npm install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clone this repository
+$ git clone https://github.com/ewelinaszoda/star-wars-swapi-app
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Go into the repository
+$ cd get-start-wars-swapi-app
+
+Open in your text editor
+$ code .
+
+Install dependencies
+$ npm install
+
+Run to view it in the browser
+$ npm start
 
 ## Learn More
 
@@ -45,27 +59,14 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The MIT License (MIT)
 
-### Analyzing the Bundle Size
+Copyright (c) 2020 Ewelina Szoda
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### Making a Progressive Web App
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# star-wars-swapi-app
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
