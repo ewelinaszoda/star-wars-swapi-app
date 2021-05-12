@@ -12,6 +12,13 @@ License
 
 ### Screenshots
 
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot1.png 'Home Page on big screen')
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot2.png 'Home Page on small screen')
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot3.png 'View')
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot4.png 'View')
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot5.png 'View')
+![Alt text](https://github.com/ewelinaszoda/star-wars-swapi-app/blob/main/src/screenshots/screenshot6.png 'View')
+
 ### Technologies
 
 This project was created with:
